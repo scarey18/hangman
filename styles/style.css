@@ -1,0 +1,95 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background: #f2b54d;
+	font-family: 'Neucha', cursive;
+	font-size: 25px;
+}
+h1 {
+	font-size: 3em;
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+button {
+	margin: 20px 10px;
+	font: bold 25px 'Neucha', cursive;
+	padding: 5px 20px;
+	background: #3185EA;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+button:hover {
+	background: white;
+	color: #3185EA;
+	border-color: #3185EA;
+}
+button:focus {
+	outline: none;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.overlay {
+	z-index: 5;
+	width: 550px;
+	position: absolute;
+	background: white;
+	flex-flow: column;
+	justify-content: center;
+}
+.letter {
+	margin: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.letter:hover {
+	background: #80808075;
+}
+.body-part {
+	visibility: hidden;
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+	justify-content: flex-start;
+	flex-flow: column;
+}
+#game-box {
+	background: white;
+	border: 1px solid black;
+	height: 70%;
+	width: 550px;
+	flex-flow: column;
+	overflow: hidden;	
+}
+#word {
+	font-size: 1.3em;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 4px;
+}
+#alphabet-box {
+	width: 90%;
+	height: 30%;
+	display: grid;
+	grid-template: repeat(4, 1fr) / repeat(7, 1fr);
+}
+#start-display {
+	height: 70%;
+}
+#start-display h1 {
+	position: absolute;
+	top: 25%;
+}
+#end-game {
+	height: 27%;
+	top: 55%;
+	visibility: hidden;
+}

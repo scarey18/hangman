@@ -1,0 +1,43 @@
+<!DOCTYPEhtml>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<title>Hangman</title>
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+	<link href="styles/reset.css" rel="stylesheet" type="text/css">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container" class="flex">
+		<h1>Hangman</h1>
+		<div id="game-box" class="flex">
+			<p id="stick-figure">
+				 _________</br>
+				|&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|</br>
+				|&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|</br>
+				|&emsp;&emsp;&emsp;&emsp;&nbsp;
+					<span class="body-part" id="part-1">O</span></br>
+				|&emsp;&emsp;&emsp;&emsp;
+					<span class="body-part" id="part-3">\</span><span class="body-part" id="part-2">|</span><span class="body-part" id="part-4">/</span></br>
+				|&emsp;&emsp;&emsp;&emsp;&ensp;
+					<span class="body-part" id="part-5">|</span></br>
+				|&emsp;&emsp;&emsp;&emsp;
+					<span class="body-part" id="part-6">/</span>&nbsp;<span class="body-part" id="part-7">\</span></br>
+				|</br>
+				|
+			</p>
+			<div id="word"></div>
+			<div id="alphabet-box"></div>
+			<div id="start-display" class="flex overlay">
+				<h1>Ready to play?</h1>
+				<button id="start-game">Start Game</button>
+			</div>
+			<div id="end-game" class="flex overlay">
+				<h1 id="win-lose">You win!</h1>
+				<button id="play-again">Play again?</button>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/browserify/bundledMain.js"></script>
+</body>
+</html>
